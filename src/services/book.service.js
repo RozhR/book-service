@@ -1,27 +1,23 @@
 export const addBook = async (book) => {
-    //TODO
+    // TODO: Implement addBook service
 }
+
 export const findBookByIsbn = async (isbn) => {
-    //TODO
+    // TODO: Implement findBookByIsbn service
 }
-export const deleteBook = async (isbn) => {
-    //TODO
+
+export const removeBook = async (isbn) => {
+    // TODO: Implement removeBook service
 }
+
 export const updateBookTitle = async (isbn, title) => {
-    //TODO
+    // TODO: Implement updateBookTitle service
 }
-export const findBooksByAuthor = async (author) => {
-    //TODO
+
+export const findBooksByAuthor = async (authorName) => {
+    // TODO: Implement findBooksByAuthor service
 }
-export const findBooksByPublisher = async (publisher) => {
-    //TODO
-}
-export const findBookAuthors = async (isbn) => {
-    //TODO
-}
-export const findPublishersByAuthor = async (author) => {
-    //TODO
-}
-export const deleteAuthor = async (author) => {
-    //TODO
+
+export const findBooksByPublisher = async (publisherName) => {
+    // TODO: Implement findBooksByPublisher service
 }
