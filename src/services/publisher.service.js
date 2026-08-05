@@ -8,11 +8,11 @@ export const findPublishersByAuthor = async (authorName) => {
         throw new Error(`Author with name ${authorName} not found`);
     }
     const publishers = await sequelize.query(`
-      SELECT DISTINCT b.publisher 
-           FROM  books b 
-               JOIN books_authors ba  ON b.isbn = ba.isbn 
-           WHERE ba.author_name = :name;
-   `, {
+        SELECT DISTINCT b.publisher
+        FROM  books b
+                  JOIN books_authors ba  ON b.isbn = ba.isbn
+        WHERE ba.author_name = :name;
+    `, {
         type: QueryTypes.SELECT,
         replacements: {name: authorName}
     })
